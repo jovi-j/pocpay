@@ -11,13 +11,14 @@ class Inicio extends StatefulWidget {
 class _InicioState extends State<Inicio> {
   double saldo = 120.00;
   String exibicaoSaldo = "******";
-  bool mostrandoSaldo = false;
+  bool mostrandoSaldo = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: const Text("PocPay"),
+        automaticallyImplyLeading: false,
       ),
       body: ListView(
         scrollDirection: Axis.vertical,
