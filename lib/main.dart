@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:pocpay/features/inicio/inicio.dart';
+import 'package:pocpay/features/authentication/login.dart';
 
 void main() {
-  runApp(const MaterialApp(title: "Pocpay", home: Inicio()));
+  runApp(MaterialApp(
+    title: "Pocpay",
+    home: Login(),
+    theme: ThemeData(primarySwatch: Colors.green),
+  ));
 }
