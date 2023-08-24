@@ -23,9 +23,9 @@ class _LoginState extends State<Login> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 50,
-                child: const Text("PocPay",
+                child: Text("PocPay",
                     style: TextStyle(color: Colors.green, fontSize: 40)),
               ),
               Padding(
@@ -69,7 +69,8 @@ class _LoginState extends State<Login> {
                           passwordController.text == "1234") {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Inicio()),
+                          MaterialPageRoute(
+                              builder: (context) => const Inicio()),
                         );
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(

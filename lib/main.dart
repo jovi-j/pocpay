@@ -4,7 +4,7 @@ import 'package:pocpay/features/authentication/login.dart';
 void main() {
   runApp(MaterialApp(
     title: "Pocpay",
-    home: Login(),
+    home: const Login(),
     theme: ThemeData(primarySwatch: Colors.green),
   ));
 }

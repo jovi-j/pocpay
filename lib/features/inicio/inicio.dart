@@ -41,7 +41,7 @@ class _InicioState extends State<Inicio> {
             children: [
               Container(
                 alignment: Alignment.centerLeft,
-                padding: EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.only(top: 20),
                 child: Text(
                   "Saldo: R\$ $exibicaoSaldo",
                   style: const TextStyle(
@@ -81,7 +81,7 @@ class _InicioState extends State<Inicio> {
         },
       ),
       bottomNavigationBar: BottomNavigationBar(
-        selectedIconTheme: IconThemeData(color: Colors.green),
+        selectedIconTheme: const IconThemeData(color: Colors.green),
         currentIndex: 1,
         items: const [
           BottomNavigationBarItem(
